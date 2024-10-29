@@ -2,6 +2,9 @@
 # 🛒 PWA Shop
 <img width="256" alt="image" src="https://github.com/user-attachments/assets/4f2ba7eb-d3bc-4039-9ccc-fdc73aae36e2">
 
+## Live Demo
+https://paw-online.netlify.app/
+
 ## Overview
 
 Welcome to **PWA Shop**! 🎉 This is a **Progressive Web Application (PWA)** that lets users browse products, add items to the cart 🛍️, and even install the app on their device 📱 for offline shopping! The app is modularized into separate JavaScript files for better maintainability and readability.
