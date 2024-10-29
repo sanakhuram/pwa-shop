@@ -1,5 +1,6 @@
 
 # 🛒 PWA Shop
+<img width="256" alt="image" src="https://github.com/user-attachments/assets/4f2ba7eb-d3bc-4039-9ccc-fdc73aae36e2">
 
 ## Overview
 
