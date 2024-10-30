@@ -1,15 +1,13 @@
-// installService.js
-
 export function setupInstallPrompt(installButton) {
   let deferredPrompt;
 
   window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-    installButton.style.display = "block";
+    console.log("beforeinstallprompt event fired");
+    e.preventDefault(); 
+    deferredPrompt = e; 
 
     installButton.addEventListener("click", () => {
-      deferredPrompt.prompt();
+      deferredPrompt.prompt(); // Show the install prompt
       deferredPrompt.userChoice.then((choiceResult) => {
         if (choiceResult.outcome === "accepted") {
           console.log("User accepted the install prompt");

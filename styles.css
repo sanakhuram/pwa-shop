@@ -161,3 +161,39 @@ header h1 {
     display: inline-block;
     vertical-align: middle;
 }
+/* Position install button at the top-left */
+#installButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #e75b0b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+#installButton:hover {
+    background-color: #218838;
+}
+
+/* Make the install button responsive */
+@media (max-width: 768px) {
+    #installButton {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+        top: 5px;
+        left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #installButton {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+        top: 3px;
+        left: 3px;
+    }
+}
