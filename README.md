@@ -3,6 +3,7 @@
 <img width="256" alt="image" src="https://github.com/user-attachments/assets/4f2ba7eb-d3bc-4039-9ccc-fdc73aae36e2">
 
 ## Live Demo
+
 https://paw-online.netlify.app/
 
 ## Overview
@@ -36,7 +37,7 @@ Welcome to **PWA Shop**! 🎉 This is a **Progressive Web Application (PWA)** th
 ### 1. Clone the repository 🖥️
 
 ```bash
-git clone https://github.com/your-repo/PAW-shop.git
+git clone https://github.com/your-repo/pwa-shop.git
 cd pwa-shop
 ```
 
