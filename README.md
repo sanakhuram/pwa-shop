@@ -16,7 +16,6 @@ Welcome to **PWA Shop**! 🎉 This is a **Progressive Web Application (PWA)** th
 - **🛍️ Dynamic product list**: Displays a list of products dynamically with the ability to add items to the cart.
 - **🔄 Service worker**: Smart caching for faster load times and offline functionality.
 - **🛒 Cart functionality**: Add products to the cart and view the cart contents.
-- **🔔 Push notifications**: Optionally send notifications to the user (if included in your setup).
 
 ## File Structure
 
@@ -37,7 +36,7 @@ Welcome to **PWA Shop**! 🎉 This is a **Progressive Web Application (PWA)** th
 ### 1. Clone the repository 🖥️
 
 ```bash
-git clone https://github.com/your-repo/pwa-shop.git
+git clone https://github.com/your-repo/PAW-shop.git
 cd pwa-shop
 ```
 
