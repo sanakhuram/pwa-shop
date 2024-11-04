@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-https://paw-online.netlify.app/
+https://pwa-online.netlify.app/
 
 ## Overview
 
