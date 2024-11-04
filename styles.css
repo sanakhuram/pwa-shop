@@ -161,7 +161,7 @@ header h1 {
     display: inline-block;
     vertical-align: middle;
 }
-/* Position install button at the top-left */
+
 #installButton {
     position: fixed;
     top: 10px;
@@ -179,7 +179,6 @@ header h1 {
     background-color: #218838;
 }
 
-/* Make the install button responsive */
 @media (max-width: 768px) {
     #installButton {
         padding: 0.4rem 0.8rem;

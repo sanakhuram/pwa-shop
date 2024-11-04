@@ -1,4 +1,6 @@
 // cartService.js
+
+
 export let cart = [];
 
 export function updateCart() {
