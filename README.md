@@ -1,5 +1,5 @@
-
 # 🛒 PWA Shop
+
 <img width="256" alt="image" src="https://github.com/user-attachments/assets/4f2ba7eb-d3bc-4039-9ccc-fdc73aae36e2">
 
 ## Live Demo
@@ -68,6 +68,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 ### 1. **app.js**
 
 This is the entry point that brings together the different modules. It imports the functionality from `productService.js`, `cartService.js`, and `installService.js`. It:
+
 - Displays products on the page.
 - Updates the cart with items.
 - Manages the PWA install prompt.
@@ -79,8 +80,8 @@ This module manages the product data and rendering the product list dynamically 
 ```javascript
 // Example of how products are managed
 export const products = [
-  { id: 1, name: "Smartphone", price: 499, img: "./images/smartphone.jpg" },
-  { id: 2, name: "Laptop", price: 899, img: "./images/laptop.jpg" },
+  { id: 1, name: 'Smartphone', price: 499, img: './images/smartphone.jpg' },
+  { id: 2, name: 'Laptop', price: 899, img: './images/laptop.jpg' },
   // More products...
 ];
 ```
@@ -88,6 +89,7 @@ export const products = [
 ### 3. **cartService.js**
 
 This module handles the cart functionality:
+
 - Adds products to the cart.
 - Updates the cart display.
 - Saves the cart to `IndexedDB` to ensure that data persists across sessions.
@@ -95,33 +97,28 @@ This module handles the cart functionality:
 ### 4. **installService.js**
 
 This module handles the PWA install prompt:
+
 - Manages the `beforeinstallprompt` event.
 - Displays the install button and listens for user interaction to trigger the PWA install process.
 
 ### 5. **sw.js**
 
 This is the **service worker** script responsible for caching key app resources for offline use. It:
+
 - Caches important files like HTML, CSS, JavaScript, and images.
 - Serves resources from the cache when offline or when the network is slow.
 
 ```javascript
-const CACHE_NAME = "pwa-shop-cache-v2";
-const urlsToCache = [
-  "/index.html",
-  "/styles.css",
-  "/app.js",
-  "/images/logo.png",
-];
+const CACHE_NAME = 'pwa-shop-cache-v2';
+const urlsToCache = ['/index.html', '/styles.css', '/app.js', '/images/logo.png'];
 ```
 
 ## 🧙‍♂️ How It Works
 
-1. **Service Worker**: 
+1. **Service Worker**:
    - The service worker (`sw.js`) caches the app’s assets, enabling offline functionality. It intercepts network requests and serves resources from the cache when they are available, falling back to the network if not.
-   
-2. **Modular JavaScript**: 
+2. **Modular JavaScript**:
    - The app is modularized into smaller JavaScript files for products, cart, and installation functionality, which are imported and used in `app.js`.
-   
 3. **PWA Installation**:
    - Users can install the app on their device using the "Install App" button, and the app will behave like a native mobile or desktop app.
 
